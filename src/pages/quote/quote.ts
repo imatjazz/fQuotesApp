@@ -1,3 +1,4 @@
+import { Quote } from './../../data/quote.interface';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
@@ -24,8 +25,7 @@ export class QuotePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuotePage');
     this.person = this.navParams.get('person');
-    this.text = this.navParams.get('text');
-  
+    this.text = this.navParams.get('text');  
   }
 
   onClose(){
