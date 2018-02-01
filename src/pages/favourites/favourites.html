@@ -14,6 +14,18 @@
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-item 
+      *ngFor="let quote of quotes"
+      (click)="onViewQuote(quote)">
+      <h2>{{quote.person}}</h2>
+      <p>{{quote.text}}</p>
+
+    </ion-item>
+
+  </ion-list>
+
+  <!--
   <ion-list ion-item >
     <ion-list-header>Type of Audit Engagement ?</ion-list-header>
       <p><button ion-button color="light" block round >Group Audit </button></p>
@@ -30,4 +42,5 @@
         <ion-label> Multi-firm engagement under KAM5?</ion-label>
         <ion-toggle ></ion-toggle>
     </ion-item>
+  --> 
 </ion-content>
